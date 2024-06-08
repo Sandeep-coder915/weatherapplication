@@ -1,7 +1,11 @@
 body{
-    background-image: url(./bg/pexels-benjamin-suter-3617500.jpg);
+    background:linear-gradient(45deg, #a7b663, #1a3bdd);
     background-size:cover;
     background-repeat: no-repeat;
+    height: 150vh; /* Making the body height larger than the viewport to enable scrolling */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-position: center;
     }
 *{
     font-family: 'popins','sans-serif';
@@ -16,10 +20,11 @@ body{
     max-width: 470px;
     background: linear-gradient(135deg,#00feba,#5b548a);
     color: #fff;
-    margin: 70px auto 0;
+    margin: 50px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+    
 
 }
 .search{
@@ -102,3 +107,50 @@ body{
     display: none;
 }
  
+
+ 
+
+  /* Customizing the scrollbar */
+  /* Webkit Browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background:  #555 ;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background:linear-gradient(45deg, #fc466b, #3f5efb);
+  }
+
+  /* Firefox */
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+
+  /* IE and Edge */
+  body::-ms-scrollbar {
+    width: 50px;
+  }
+
+  body::-ms-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+
+  body::-ms-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+
+  body::-ms-scrollbar-thumb:hover {
+    background: #555;
+  }
