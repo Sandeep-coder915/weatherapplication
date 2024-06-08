@@ -154,3 +154,8 @@ body{
   body::-ms-scrollbar-thumb:hover {
     background: #555;
   }
+
+  #ee{
+    text-align: center; 
+
+  }
